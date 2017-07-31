@@ -69,6 +69,7 @@ exports.seed = function(knex, Promise) {
       {tag: 'responsive design'}
     ])
   })
+  
   .then(() => {
     return knex('resource_tags').insert([
       {resource_id: 1, tag_id: 1},

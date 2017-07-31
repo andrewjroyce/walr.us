@@ -84,7 +84,6 @@ loadPosts();
     });
 
     FB.getLoginStatus();
-
     FB.Event.subscribe('auth.statusChange', function(response) {
       console.log('FB login status changed')
       FB.getLoginStatus(function(response) {
